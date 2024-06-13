@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Form</h1>
+        <h3>Social Media Login</h3>
+        <div class="login-form">
+            <input type="text"
+                    id="email"
+                    placeholder="Email or Phone"
+                    autocomplete="off" required>
+            <input type="password"
+                    id="password"
+                    placeholder="Password"
+                    autocomplete="off" required>
+            <button onclick="sumbitForm()">Login</button>
+        </div>
+        <div class="social-buttons">
+            <button class="facebook">
+                <i class="fab fa-facebook-f"></i>
+                Login with Facebook 
+            </button>
+            <button class="twitter">
+                <i class="fab fa-twitter"></i>
+                Login with Twitter
+            </button>
+            <button class="google">
+                <i class="fab fa-google"></i>
+                Login with Google 
+            </button>
+            <button class="instagram">
+                <i class="fab fa-instagram"></i>
+                Login with Instagram
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function sumbitForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            window.alert('The form is sumbitted');
+
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+</html>
