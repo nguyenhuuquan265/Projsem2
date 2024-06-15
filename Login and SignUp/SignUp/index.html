@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Resgistration Form</title>
 </head>
 <body>
@@ -44,7 +45,31 @@
                               required
                               />
                         <label for="mobile">Contact:</label>
-                        <input type="text">
+                        <input type="text"
+                                id="mobile"
+                                name="mobile"
+                                maxlength="10"
+                                required
+                                />
+                        <label for="gender">Gender:</label>
+                        <select
+                          id="gender"
+                          name="gender"
+                          required
+                          >
+                          <option value="male">
+                            Male
+                          </option>
+                          <option value="Female">
+                            Female
+                          </option>
+                          <option value="other">
+                            Other
+                          </option>
+                        </select>
+                        <button type="submit">
+                            Sumbit
+                        </button>
         </form>
     </div>
 </body>
